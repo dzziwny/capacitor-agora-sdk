@@ -1,0 +1,29 @@
+PODS:
+  - AgoraAudio_iOS (3.1.2)
+  - Capacitor (2.4.2):
+    - CapacitorCordova
+  - CapacitorCordova (2.4.2)
+
+DEPENDENCIES:
+  - AgoraAudio_iOS (= 3.1.2)
+  - "Capacitor (from `../node_modules/@capacitor/ios`)"
+  - "CapacitorCordova (from `../node_modules/@capacitor/ios`)"
+
+SPEC REPOS:
+  trunk:
+    - AgoraAudio_iOS
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../node_modules/@capacitor/ios"
+  CapacitorCordova:
+    :path: "../node_modules/@capacitor/ios"
+
+SPEC CHECKSUMS:
+  AgoraAudio_iOS: 74e229feee0de96e981a8b91fcef41b1d75a186e
+  Capacitor: 99a3d85b31f782d6b58bd9e3f2de4ed719c94d51
+  CapacitorCordova: 64114f68ed75e409d37a8e1129c0038b3a0cec0d
+
+PODFILE CHECKSUM: eece9bc386203d62990d2a72c12e7b1ffe62a044
+
+COCOAPODS: 1.9.3
