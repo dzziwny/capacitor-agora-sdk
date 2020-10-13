@@ -7,7 +7,7 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 
 @NativePlugin
-public class AgoraIos extends Plugin {
+public class Agora extends Plugin {
 
     @PluginMethod
     public void echo(PluginCall call) {

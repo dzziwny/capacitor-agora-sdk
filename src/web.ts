@@ -1,8 +1,8 @@
 import { WebPlugin } from '@capacitor/core';
-import { AgoraIosPlugin } from './definitions';
+import { AgoraPlugin } from './definitions';
 import AgoraRTC, { IAgoraRTCClient, IMicrophoneAudioTrack } from 'agora-rtc-sdk-ng';
 
-export class AgoraIosWeb extends WebPlugin implements AgoraIosPlugin {
+export class AgoraWeb extends WebPlugin implements AgoraPlugin {
 
   private client: IAgoraRTCClient;
   private audioTrack: Promise<IMicrophoneAudioTrack>;
@@ -11,7 +11,7 @@ export class AgoraIosWeb extends WebPlugin implements AgoraIosPlugin {
 
   constructor() {
     super({
-      name: 'AgoraIos',
+      name: 'Agora',
       platforms: ['web'],
     });
 
@@ -90,9 +90,9 @@ export class AgoraIosWeb extends WebPlugin implements AgoraIosPlugin {
 
 }
 
-const AgoraIos = new AgoraIosWeb();
+const Agora = new AgoraWeb();
 
-export { AgoraIos };
+export { Agora };
 
 import { registerWebPlugin } from '@capacitor/core';
-registerWebPlugin(AgoraIos);
+registerWebPlugin(Agora);

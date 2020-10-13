@@ -2,8 +2,8 @@ import Foundation
 import Capacitor
 import AgoraRtcKit
 
-@objc(AgoraIos)
-public class AgoraIos: CAPPlugin {
+@objc(Agora)
+public class Agora: CAPPlugin {
 
     var agoraKit: AgoraRtcEngineKit!
 
@@ -40,7 +40,7 @@ public class AgoraIos: CAPPlugin {
     }
 }
 
-extension AgoraIos: AgoraRtcEngineDelegate {
+extension Agora: AgoraRtcEngineDelegate {
 
   func rtcEngine(_ engine: AgoraRtcEngineKit, didJoinedOfUid uid: UInt, elapsed: Int) {
     self.notifyListeners("didJoin", data: nil)

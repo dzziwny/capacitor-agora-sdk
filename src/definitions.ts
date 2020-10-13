@@ -1,10 +1,10 @@
 declare module '@capacitor/core' {
   interface PluginRegistry {
-    AgoraIos: AgoraIosPlugin;
+    Agora: AgoraPlugin;
   }
 }
 
-export interface AgoraIosPlugin {
+export interface AgoraPlugin {
   initialize(options: { appId: string }): Promise<void>;
   join(options: {
     channel: string;
