@@ -12,7 +12,7 @@ export class AgoraWeb extends WebPlugin implements AgoraPlugin {
   constructor() {
     super({
       name: 'Agora',
-      platforms: ['web'],
+      platforms: ['web', 'android'],
     });
 
     this.appId = new Promise(resolve => this.appIdResolver = resolve);
