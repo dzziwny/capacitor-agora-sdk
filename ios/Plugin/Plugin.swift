@@ -43,11 +43,11 @@ public class Agora: CAPPlugin {
 extension Agora: AgoraRtcEngineDelegate {
 
   func rtcEngine(_ engine: AgoraRtcEngineKit, didJoinedOfUid uid: UInt, elapsed: Int) {
-    self.notifyListeners("didJoin", data: nil)
+    self.notifyListeners("didJoin", data: ["uid": uid])
   }
 
   func rtcEngine(_ engine: AgoraRtcEngineKit, didOfflineOfUid uid: UInt, reason: AgoraUserOfflineReason) {
-      self.notifyListeners("didLeave", data: nil)
+      self.notifyListeners("didLeave", data: ["uid": uid])
   }
 
 }

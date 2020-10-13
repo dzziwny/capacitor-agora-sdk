@@ -40,11 +40,11 @@ export class AgoraWeb extends WebPlugin implements AgoraPlugin {
     });
 
     this.client.on('user-joined', user => {
-      this.notifyListeners('didJoin', user.uid.toString())
+      this.notifyListeners('didJoin', { uid: user.uid.toString()})
     })
 
     this.client.on('user-left', user => {
-      this.notifyListeners('didLeave', user.uid.toString())
+      this.notifyListeners('didLeave', { uid: user.uid.toString()})
     })
   }
 
