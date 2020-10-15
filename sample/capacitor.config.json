@@ -1,0 +1,13 @@
+{
+  "appId": "com.example.app",
+  "appName": "sample",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist/sample",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

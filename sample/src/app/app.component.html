@@ -1,0 +1,4 @@
+<button *ngIf="!inChannel" (click)="joinChannel()">JOIN CHANNEL</button>
+<button *ngIf="inChannel" (click)="leaveChannel()">LEAVE CHANNEL</button>
+<button *ngIf="inChannel && !talking" (click)="talk()">TALK</button>
+<button *ngIf="inChannel && talking" (click)="mute()">MUTE</button>
