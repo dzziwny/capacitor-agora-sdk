@@ -2,9 +2,11 @@
 
 # common
 npm ci
+type agora appId in line 11 in app.component.ts
 npm run build
 
 # web start
+uncomment line 5 in app.component.ts
 npm start
 
 # ios build
