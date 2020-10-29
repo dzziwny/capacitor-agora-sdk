@@ -11,6 +11,8 @@ public class Agora: CAPPlugin {
       let appId = call.getString("appId") ?? "";
       agoraKit = AgoraRtcEngineKit.sharedEngine(withAppId: appId, delegate: nil);
       agoraKit.enableWebSdkInteroperability(true);
+      agoraKit.setChannelProfile(AgoraChannelProfile.liveBroadcasting);
+      agoraKit.setClientRole(AgoraClientRole.broadcaster);
       call.resolve();
     }
 
